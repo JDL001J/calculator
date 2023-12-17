@@ -1,15 +1,35 @@
 screen = document.getElementById('text-box');
 
-numObject = {
-     firstNum: 
-     secondNum:
-     operation:
+string = '0'
+
+// numObject = {
+//      firstNum: 
+//      secondNum:
+//      operation:
+// }
+
+display()
+
+function operate(number){
+     if(string == '0' && string.length == 1){
+          string = `${number}`
+     }
+     else{
+          string =  string.concat(number);
+          console.log("works?");
+          display()
+     }
+     console.log("works?");
+          display()
+    
 }
 
-
-
-function operate(){
-    screen.value = "ehofsdkfa"
+function clean() {
+     string = '0';
+     console.log("works?");
+     display()
 }
 
-operate()
+function display(){
+     screen.value = string
+}
