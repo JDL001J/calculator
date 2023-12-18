@@ -1,6 +1,7 @@
 screen = document.getElementById('text-box');
 
 string = '0'
+secondString = ''
 
 // numObject = {
 //      firstNum: 
@@ -33,3 +34,4 @@ function clean() {
 function display(){
      screen.value = string
 }
+
