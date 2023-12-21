@@ -58,32 +58,63 @@ operator = '+'
 }
 
 function subtract(){
-   
+     createFirstString();
+     clean();
+operator = '-'
   
 }
 
 function divide(){
-     
+     createFirstString();
+     clean();
+operator = '/'
 }
 
 function multiply(){
-     
+     createFirstString();
+     clean();
+operator = 'X'
+}
+
+function getOperator(){
+     switch(operator){
+          case '+':
+               string = `${Number(firstString) +  Number(secondString)}`;
+          break
+          
+          case '-':
+               string = `${Number(firstString) -  Number(secondString)}`;
+          break
+
+          case 'X':
+               string = `${Number(firstString) *  Number(secondString)}`;
+          break
+
+          case '/':
+               string = `${Number(firstString) /  Number(secondString)}`;
+          break
+
+     }
+
+
+
 }
 
 function equal(){
-     switch(operator){
-          case "+":
+    
           createSecondString();
+
+          getOperator();
    
-          string = `${Number(firstString) + Number(secondString)}`;
+         
           firstString = '';
           secondString = '';
       
           display();
-          
 
 
-     }
+
+     
 
 
     
